@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import Link from 'next/link';
+
 import { urlFor } from '../lib/client';
 
 const FooterBanner = ({ footerBanner: { discount, largeText1, largeText2, saleTime, smallText, midText, desc, product, buttonText, image } }) => {
@@ -23,9 +24,7 @@ const FooterBanner = ({ footerBanner: { discount, largeText1, largeText2, saleTi
                 </div>
 
                 <img
-                    src={urlFor(image)}
-                    alt="Banner-image"
-                    className="footer-banner-image"
+                    src={urlFor(image)} alt="" className="footer-banner-image"
                 />
             </div>
         </div>
