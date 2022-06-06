@@ -4,6 +4,7 @@ import { toast } from 'react-hot-toast';
 const Context = createContext();
 
 export const StateContext = ({ children }) => {
+
     const getLocalStorage = (name) => {
         if (typeof window !== 'undefined') {
             const storage = localStorage.getItem(name);
