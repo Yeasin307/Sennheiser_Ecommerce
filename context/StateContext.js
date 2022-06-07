@@ -98,6 +98,7 @@ export const StateContext = ({ children }) => {
             setTotalPrice(totalPrice + findProduct.price);
             setTotalQuantities(totalQuantities + 1);
 
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
             localStorage.setItem('totalPrice', JSON.stringify(totalPrice + findProduct.price));
             localStorage.setItem('totalQuantities', JSON.stringify(totalQuantities + 1));
         }
@@ -109,6 +110,7 @@ export const StateContext = ({ children }) => {
                 setTotalPrice(totalPrice - findProduct.price);
                 setTotalQuantities(totalQuantities - 1);
 
+                localStorage.setItem('cartItems', JSON.stringify(cartItems));
                 localStorage.setItem('totalPrice', JSON.stringify(totalPrice - findProduct.price));
                 localStorage.setItem('totalQuantities', JSON.stringify(totalQuantities - 1));
             }

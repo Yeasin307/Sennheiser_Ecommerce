@@ -95,7 +95,7 @@ const Cart = () => {
                 {cartItems.length >= 1 && (
                     <div className="cart-bottom">
                         <div className="total">
-                            <h3>Subtotal:</h3>
+                            <h3>Subtotal : </h3>
                             <h3>${totalPrice}</h3>
                         </div>
                         <div className="btn-container">

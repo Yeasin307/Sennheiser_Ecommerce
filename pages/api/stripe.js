@@ -39,7 +39,7 @@ export default async function handler(req, res) {
                 cancel_url: `${req.headers.origin}/cancel`,
             }
 
-            // Create Checkout Sessions from body params.
+            // Create checkout sessions from body params.
             const session = await stripe.checkout.sessions.create(params);
 
             res.status(200).json(session);
